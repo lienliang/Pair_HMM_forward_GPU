@@ -1,13 +1,13 @@
 # aligner_gpu_version
-Author: Enliang Li
-mian translation for the forward algorithm (gpu-version)
-Latest Version: 1.2 on Apr.15th 2019
+Author: Enliang Li_
+mian translation for the forward algorithm (gpu-version)_
+Latest Version: 1.2 on Apr.15th 2019_
 
 # Use following command to build:
 using the "compile.sh" to build the sources 
 
 # Performance Details (TITAN Xp) [HOLMES flow (27 states)]
-# forward_matrix [x_dim+1][y_dim+1][batch][states-1]
+## forward_matrix [x_dim+1][y_dim+1][batch][states-1]
 
 forward_matrix: torch.Size
 ([6, 7, 1, 26])
@@ -29,7 +29,7 @@ forward_matrix: torch.Size
 
 
 # Performance Details (TITAN Xp) [regular flow (3 states)]
-# forward_matrix [x_dim+1][y_dim+1][batch][states-1]
+## forward_matrix [x_dim+1][y_dim+1][batch][states-1]
 
 forward_matrix: torch.Size
 ([16, 19, 1, 3])
@@ -49,7 +49,8 @@ forward_matrix: torch.Size
 69.3239 ms / call  (float)
 72.4838 ms / call  (double)
 
-# PyCUDA Support, copy-paste the function definition and call it with PyCUDA in your own flow
+# PyCUDA Support:
+## copy-paste the function definition and call it with PyCUDA in your own flow
 For examples, please refer to:
 https://wiki.tiker.net/PyCuda/Examples
 Copy Right Reserved by AndreasKloeckner
